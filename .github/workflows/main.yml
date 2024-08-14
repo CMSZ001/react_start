@@ -8,9 +8,12 @@ jobs:
     steps:
     - name: 初始化
       uses: actions/checkout@v4
-    - name: 安装依赖
+ 
+     - name: 安装依赖
       run: npm install
+
     - name: 开始打包
       run: npm run build
+
     - name: 部署页面
-      run: 
+      uses: jamsIves/github-pages-deploy-action@v4
