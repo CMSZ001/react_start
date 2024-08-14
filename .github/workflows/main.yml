@@ -14,9 +14,3 @@ jobs:
 
     - name: 开始打包
       run: npm run build
-
-    - name: 部署页面
-      uses: jamesIves/github-pages-deploy-action@v4
-      with: 
-        branch: gh-pages
-        folder: build
