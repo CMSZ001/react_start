@@ -12,3 +12,5 @@ jobs:
       run: npm install
     - name: 开始打包
       run: npm run build
+    - name: 部署页面
+      run: 
