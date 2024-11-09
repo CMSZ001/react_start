@@ -1,7 +1,9 @@
 name: 打包React项目
-on: push
+on: 
   schedule:
     - cron: "0 8 * * *" 
+  push:
+    branches: main
 
 permissions:
   contents: write
